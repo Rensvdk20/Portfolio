@@ -1,0 +1,21 @@
+$primary: #6e07f3;
+$secondary: #252526;
+
+@font-face {
+	font-family: "Inter";
+	src: url("./assets/fonts/Inter-Regular.ttf");
+}
+
+* {
+	color: white;
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	margin: 0;
+	background-color: $primary;
+}
+
+a {
+	text-decoration: none;
+}
