@@ -6,7 +6,7 @@
 		<div class="project-item-block">
 			<p class="project-item-block-language">{{ project.languages }}</p>
 			<a :href="project.link" target="_blank">
-				<img src="/src/assets/images/icons/link.svg" class="project-item-block-link" />
+				<img src="/assets/images/icons/link.svg" class="project-item-block-link" />
 			</a>
 			<h3 class="project-item-block-name" :style="{ color: project.color }">
 				{{ project.name }}

@@ -10,7 +10,7 @@
 			</p>
 		</div>
 		<div class="about-img">
-			<img src="/src/assets/images/programming.svg" />
+			<img src="/assets/images/programming.svg" />
 		</div>
 	</div>
 </template>

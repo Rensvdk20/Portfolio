@@ -7,7 +7,7 @@
 		</h1>
 		<div class="header-image">
 			<img
-				src="/src/assets/images/profile.png"
+				src="/assets/images/profile.png"
 				width="450px"
 				alt="Profile Picture"
 				draggable="false"
@@ -194,7 +194,7 @@ const projects = <IProjectItem[]>[
 		languages: "Nextjs - Prisma - Scss",
 		description:
 			"A personal project of mine build with Next 13. It’s all about guessing a song by only hearing a few seconds of a song. Create your own and imagine a new heardle",
-		image: "/src/assets/images/projects/Imeardle.jpg",
+		image: "/assets/images/projects/Imeardle.jpg",
 		link: "https://github.com/Rensvdk20/Imeardle",
 		color: "#EB3372"
 	},
@@ -204,7 +204,7 @@ const projects = <IProjectItem[]>[
 		languages: "C# - Rest API - Scss",
 		description:
 			"Website for my university to not waste food, by using the Too Good To Go concept. Students can reserve food boxes at specific timeslots and pick them up at the selected canteen.",
-		image: "/src/assets/images/projects/Foodwise.jpg",
+		image: "/assets/images/projects/Foodwise.jpg",
 		link: "",
 		color: "#C7002B"
 	}
