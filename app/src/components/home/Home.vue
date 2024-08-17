@@ -205,7 +205,7 @@ const projects = <IProjectItem[]>[
 		description:
 			"Website for my university to not waste food, by using the Too Good To Go concept. Students can reserve food boxes at specific timeslots and pick them up at the selected canteen.",
 		image: "/assets/images/projects/Foodwise.jpg",
-		link: "",
+		link: "https://github.com/Rensvdk20/Foodwise",
 		color: "#C7002B"
 	}
 ];
