@@ -1,9 +1,9 @@
 <template>
 	<footer>
 		<div class="pages">
-			<router-link to="/">Home</router-link>
-			<router-link to="/projects">Projects</router-link>
-			<router-link to="/contact">Contact</router-link>
+			<p @click="scrollTo('header')">Home</p>
+			<p @click="scrollTo('project-item')">Projects</p>
+			<p @click="scrollTo('contact')">Contact</p>
 		</div>
 		<div class="copyright">@ {{ year }} - Rens van der Kemp</div>
 	</footer>
@@ -21,7 +21,8 @@ footer {
 		font-size: 1.2rem;
 		margin: 20px;
 
-		a:hover {
+		p:hover {
+			cursor: pointer;
 			color: darken(white, 10);
 		}
 	}
@@ -40,4 +41,11 @@ footer {
 </style>
 <script setup lang="ts">
 let year = new Date().getFullYear();
+
+const scrollTo = (className: string) => {
+	const element = document.querySelector(`.${className}`);
+	if (element) {
+		element.scrollIntoView({ behavior: "smooth" });
+	}
+};
 </script>
