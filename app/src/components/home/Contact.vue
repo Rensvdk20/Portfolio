@@ -30,6 +30,7 @@
 		text-decoration: underline;
 		position: relative;
 		display: inline-block;
+		text-underline-offset: 3px;
 
 		&:hover {
 			text-decoration: none;
@@ -39,7 +40,7 @@
 				position: absolute;
 				left: 0;
 				right: 0;
-				bottom: 2px;
+				bottom: 1px;
 				height: 4px;
 				background: linear-gradient(270deg, darken($primary, 8), darken($primary, 20));
 				background-size: 400% 400%;
