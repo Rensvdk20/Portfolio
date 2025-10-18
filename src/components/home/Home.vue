@@ -35,7 +35,7 @@
 		</div>
 	</div>
 	<About />
-	<ProjectItem v-for="project in projects" :key="project.id" :project="project" />
+	<ProjectItem v-for="(project, index) in projects" :key="index" :project="project" />
 	<Contact />
 </template>
 
@@ -189,7 +189,6 @@ const offsetX = ref(0);
 const offsetY = ref(0);
 const projects = <IProjectItem[]>[
 	{
-		id: "1",
 		name: "Imeardle",
 		languages: "Nextjs - Prisma - Scss",
 		description:
@@ -199,14 +198,30 @@ const projects = <IProjectItem[]>[
 		color: "#EB3372"
 	},
 	{
-		id: "2",
 		name: "Foodwise",
 		languages: "C# - Rest API - Scss",
 		description:
-			"Website for my university to not waste food, by using the Too Good To Go concept. Students can reserve food boxes at specific timeslots and pick them up at the selected canteen.",
+			"Website for my university to not waste food, by using the Too Good To Go concept. Students can reserve food boxes at specific timeslots and pick them up at the selected canteen",
 		image: "/assets/images/projects/Foodwise.jpg",
 		link: "https://github.com/Rensvdk20/Foodwise",
 		color: "#C7002B"
+	},
+	{
+		name: "Cooksy",
+		languages: "Nuxt - Prisma - Tailwind",
+		description:
+			"A web application for managing my recipes, so I don't keep losing them in the notes app on my phone",
+		image: "/assets/images/projects/Cooksy.jpg",
+		link: "https://github.com/Rensvdk20/Cooksy",
+		color: "#6F08E4"
+	},
+	{
+		name: "Clipcord",
+		languages: "Vue - Shadcn - Tailwind",
+		description: "An image clipboard to store and quickly share images/GIFs",
+		image: "/assets/images/projects/Clipcord.jpg",
+		link: "https://github.com/Rensvdk20/Clipcord",
+		color: "#7F22FE"
 	}
 ];
 

@@ -1,5 +1,5 @@
 <template>
-	<div class="project-item" :class="key % 2 == 0 ? 'reverse' : ''">
+	<div class="project-item" :class="key % 2 !== 0 ? 'reverse' : ''">
 		<div class="project-item-image">
 			<img :src="project.image" />
 		</div>
